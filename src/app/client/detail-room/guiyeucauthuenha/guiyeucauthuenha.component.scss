@@ -1,0 +1,26 @@
+label{
+    min-width: 30%;
+}
+.row{
+    margin-bottom: 10px;
+}
+h4{
+    text-align: center; 
+}
+.modal-content{
+    padding: 10px;
+    input{
+        width: 70%;
+    }
+    .btn-footer{
+        input{
+            width: 100px;
+        }
+
+    }
+}
+
+.invalid-feedback {
+    color: red;
+    margin-left: 172px;
+}

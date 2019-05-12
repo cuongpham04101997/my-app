@@ -1,0 +1,68 @@
+<div class="modal-content">
+    <div class="modal-body">
+        <div id="result">
+            <form action="" [formGroup]="Form">
+                <div class="item-result">
+                    <div class="customerHeader">
+                        <h4>Thông tin</h4>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <label for="">Số điện thoại:</label>
+                        <input type="text" placeholder="Số điện thoại" formControlName="sodienthoai">
+                        <div class="invalid-feedback"
+                            *ngIf="(Form.get('sodienthoai').invalid && (Form.get('sodienthoai').dirty || Form.get('sodienthoai').touched || invalidSodienthoai)) ">
+                            This field is required
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="">Tên và tên người thuê:</label>
+                        <input type="text" placeholder="Tên người gửi" formControlName="tennguoigui">
+                        <div class="invalid-feedback"
+                            *ngIf="(Form.get('tennguoigui').invalid && (Form.get('tennguoigui').dirty || Form.get('tennguoigui').touched || invalidTennguoigui))">
+                            This field is required
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label>Địa chỉ:</label>
+                        <input type="text" placeholder="Địa chỉ:" formControlName="diachi">
+                        <div class="invalid-feedback"
+                            *ngIf="(Form.get('diachi').invalid && (Form.get('diachi').dirty || Form.get('diachi').touched || invalidDiachi))">
+                            This field is required
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="">Note:</label>
+                        <textarea name="" id="" cols="30" rows="5" formControlName="note" placeholder="note"></textarea>
+                        <div class="invalid-feedback"
+                            *ngIf="(Form.get('note').invalid && (Form.get('note').dirty || Form.get('note').touched || invalidNote))">
+                            This field is required
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label>Số chứng minh:</label>
+                        <input type="text" placeholder="Số chứng minh:" formControlName="chungminhthu">
+                        <div class="invalid-feedback"
+                            *ngIf="(Form.get('chungminhthu').invalid && (Form.get('chungminhthu').dirty || Form.get('chungminhthu').touched || invalidChungminhthu))">
+                            This field is required
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label>Hình chứng minh nhân dân:</label>
+                        <div class="form-group">
+                            <input id="file" type="file" name="file" (change)="selectImage($event)"
+                                class="input-file" />
+                        </div>
+                        <div *ngFor="let img of srcFileUpload" style="padding: 10px 10px; display: inline-block;">
+                            <img width="200" height="200" [src]="img" *ngIf="img">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="" class="btn-footer">
+        <input type="button" class="btn btn-primary" value="Gửi" (click)="Submit();">
+    </div>
+    <div class="clr"></div>
+</div>

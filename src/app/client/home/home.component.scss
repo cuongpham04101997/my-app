@@ -1,0 +1,122 @@
+
+// LỌC TIN NHANH
+.loctinnhan{
+    height: 121px;
+    background: #f1f1f1;
+    padding: 10px;
+}
+.btnloctin{
+    margin-top: 50px;
+    
+}
+.form-control{
+    margin-top: 15px;
+}
+// PHẦN HIỆN THỊ BẢNG TIN
+.tinnoibat h4.title{
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+}
+.rating{
+    position: relative;
+    top: 8px;
+    left: 9px;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 1000;
+    top: 100%;
+    left: 16px;
+    right: 0;
+    width: 95%;
+    cursor: pointer;
+    div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+    }
+}
+.tinnoibat{
+    .box{
+        height: 170px;
+        width: 95%;
+        background: #fff9f3;
+        border-bottom: 1px solid red;
+        padding: 7px 7px 0px 7px;
+        height: 210px;
+        overflow: hidden;
+        .col-md-8{
+            padding-left: 0px;
+        }
+        .img{
+            height: 140px;
+            width: 140px;
+            background: red;
+            img{
+                width: 140px;
+             height: 140px;
+            }
+        }
+        a.title{
+            text-transform: uppercase;
+            color: #E74C3C;
+            font-weight: 700;
+            font-size: 12px;
+        }
+        .btn{
+            padding: 4px 2px;
+        }
+        .space-line{
+            height: 10px;
+            width: 100%;
+        }
+        b{
+            position: relative;
+            // top: 6px;
+        }
+        .img-hot{
+            width: 50px;
+        }
+        .col-md-12{
+            div{
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  display: inherit;
+            }
+        }
+    }
+}
+
+.clr{
+    clear: both;
+}
+.space-box{
+    margin-bottom: 25px !important;
+
+}
+
+.show{
+    width: 30%;
+    background-color: red;
+}
+.showroom
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+
+}
+agm-map {
+    height: 300px;
+  }
+

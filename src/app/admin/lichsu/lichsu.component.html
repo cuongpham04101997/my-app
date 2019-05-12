@@ -1,0 +1,34 @@
+<div class="hehe">
+    <h3 style="text-align: center">Quản lí lịch sử</h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Stt</th>
+        <th>Địa chỉ</th>
+        <th>Tiêu để tin</th>
+        <th>Ngày gửi yêu cầu</th>
+        <th>Giá tiền</th>
+        <th>Trạng thái</th>
+        
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let his of history" >
+        <td >{{his.stt}}</td>
+        <td >{{his.address}}</td>
+        <td >{{his.title}}</td>
+        <td >
+          <div *ngFor="let user of his.iduserRentHouse" >
+              <span *ngIf="user.iduser == iduser">{{user.createdate| date: 'dd/MM/yyyy hh:mm'}}</span>
+          </div>
+        </td>
+        <td >{{his.price}} {{his.unit}}</td>
+        <td>
+            <div *ngFor="let user of his.iduserRentHouse" >
+                <span *ngIf="user.iduser == iduser">{{user.status | status}}</span>
+            </div>
+        </td>
+      </tr>   
+    </tbody>
+  </table>
+  </div>
